@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculadora</title>
+
+</head>
+<body>
+
+    <!--CABEÇALHO-->
+    
+    <header id="header">
+        <h1 id="title">Calculadora</h1>
+    </header>
+
+    <!--CONTEÚDO PRINCIPAL-->
+
+    <main>
+        <section class="principal">
+
+            
+            <form action="c:/" method="POST">
+
+                <!--OPÇÕES DE ESCOLHA DE OPERAÇÃO-->
+                <div class="options"> 
+
+                    <div class="opc">
+                        <input type="radio" value="opc1" id="soma" value="soma" name="opr" checked="checked"> Soma
+                    </div>
+
+                    <div class="opc">
+                        <input type="radio" value="opc2" id="subt" value="subt" name="opr" > Subtração
+                    </div>
+
+                    <div class="opc">
+                        <input type="radio" value="opc2" id="mult" value="mult" name="opr" > Multiplicação
+                    </div>
+
+                    <div class="opc">
+                        <input type="radio" value="opc2" id="divisao" value="divisao" name="opr" > 
+                        Divisão
+                    </div>
+
+                </div> <!--Options-->
+
+
+                 <!--ÁREAS PARA O USER DIGITAR-->
+                <div class="inputs">
+                    <input type="text" name="tn1" class='input' id="tn1" placeholder="N1">
+                    <input type="text" name="tn2" class='input' id="tn2" placeholder="N2">
+                    <button class="btn">Calcular</button>
+                </div>
+
+            </form>
+
+
+            <div id="res">
+                <p>Resultado: </p>
+            </div>
+            
+
+        </section>
+    </main>
+
+
+    <!--RODAPÉ COM LINK PARA O GITHUB-->
+    <footer class="footer">
+        Criado por
+         <a href="https://github.com/fabaohs" target="_blank" class="github-link">
+            <strong>Fábio Henrique</strong>
+        </a>
+    </footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
